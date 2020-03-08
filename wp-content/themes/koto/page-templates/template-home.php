@@ -59,6 +59,38 @@
         </div>
     </div>
     <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Tours</h2>
+                    <div class="row center">
+                        <?php 
+
+                        $args = array(
+                            'category_name' => 'tours'
+                        );
+                        $the_query = new WP_Query( $args );
+
+                        // The Loop
+                        if ( $the_query->have_posts() ) :
+                            while ( $the_query->have_posts() ) : $the_query->the_post();
+                        ?>
+                        <?php
+                            // Do Stuff
+                                get_template_part('/template-parts/home-article');
+                        ?>
+                        <?php
+                            endwhile;
+                        endif;
+
+                        // Reset Post Data
+                        wp_reset_postdata();
+
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </div>
         <h4>3</h4>
     </div>
     <div class="section">

@@ -1,5 +1,5 @@
 // Font
-$font-family: 'Open Sans', sans-serif;
+$font-family: "Open Sans", sans-serif;
 $font-size: 16px;
 $font-weight-thin: 100;
 $font-weight-extrathin: 200;
@@ -14,7 +14,7 @@ $line-height: 1.4;
 
 // Colors
 $color-background: #fff;
-$color-primary: #29b9e3;
+$color-primary: #e64c32;
 $color-text: #555;
 $color-link-default: #29b9e3;
 $color-link-hover: #df4a1c;
@@ -33,14 +33,13 @@ $margin: 20px;
 $padding: 20px;
 
 // Image path
-$image-path: '../images/';
+$image-path: "../images/";
 
 // Retina image suffix
-$image-suffix: '-2x';
+$image-suffix: "-2x";
 
 // Font path
-$font-path: '../fonts/';
-
+$font-path: "../fonts/";
 
 // Grid
 $grid-columns: 12;
